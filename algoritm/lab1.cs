@@ -87,7 +87,15 @@ namespace lab1
             double x = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введите второе число: ");
             double y = Convert.ToDouble(Console.ReadLine());
-            double max = Math.Max(x, y);
+            double max;
+            if (x > y)
+            {
+                max = x;
+            }
+            else
+            {
+                max = y;
+            }
             Console.WriteLine("Максимальное число: {0}", max);
             */
             /* n9
